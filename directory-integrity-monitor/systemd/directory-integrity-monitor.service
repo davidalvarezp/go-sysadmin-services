@@ -1,0 +1,12 @@
+[Unit]
+Description=Directory Integrity Monitor Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/directory-integrity-monitor
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
