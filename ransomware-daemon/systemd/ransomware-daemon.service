@@ -1,0 +1,12 @@
+[Unit]
+Description=Ransomware Prevention Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ransomware-daemon
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
